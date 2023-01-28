@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        /* Add a background color to the body */
+        body {
+            background-color: #f2f2f2;
+            text-align: center;
+            font-weight: bold;
+            
+        }
+
+        a{
+             width: 150px;
+             height: 40px;
+             margin: 0 auto;
+             display: block;
+             text-align: center;
+             margin-bottom: 20px;
+        }
+
+        /* center the table*/
+        table{
+            margin: 0 auto;
+        }
+        /* Add a color to the table headers */
+        td {
+            color: #3b86c0;
+        }
+
+        /* Add a font family to the table headers */
+        td {
+            font-family: Arial, sans-serif;
+        }
+         /* Add a color and font family to the title */
+        h1 {
+            color: #3b86c0;
+            font-family:'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        /* Add a color and font family to the button */
+        button {
+            color: #3b86c0;
+            font-family: Arial, sans-serif;
+            background-color: #3b86c0;
+            border: none;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 2px;
+            cursor: pointer;
+        }
+        /* Add a border to the table */
+        table {
+            border: 1px solid black;
+            width: 80%;
+        }
+        /* Add a border to the td*/
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Admin Panel</h1>
+   <a href="./add_Product.html"> <button style="color: black;">Add Product</button></a>
+    <table id="product" style="border: 1px solid black;">
+
+        <tr>
+            <td>S.No</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Images</td>
+        </tr>
+
+      
+    </table>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+   
+    <script>
+   
+   const firebaseConfig = {
+  apiKey: "AIzaSyBqnTGrqgVxURPkAASNG8lLKvcPtuXpOZ4",
+  authDomain: "my-project-b2620.firebaseapp.com",
+  databaseURL: "https://my-project-b2620-default-rtdb.firebaseio.com",
+  projectId: "my-project-b2620",
+  storageBucket: "my-project-b2620.appspot.com",
+  messagingSenderId: "1095507878214",
+  appId: "1:1095507878214:web:c2b6605fadc6fd41aa0547",
+  measurementId: "G-L66NPPTC4C"
+};
+   
+        firebase.initializeApp(firebaseConfig)
+   
+   
+   
+    </script>
+       <script src="admin_product.js"></script>
+</body>
+</html>

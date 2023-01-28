@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <style>
+      body {
+  background-color: #f2f2f2; /* Set background color */
+  font-family: Arial, sans-serif; /* Set default font */
+}
+
+.container {
+  width: 300px; /* Set container width */
+  margin: 0 auto; /* Center container on the page */
+  background-color: #fff; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0px 0px 10px #ccc; /* Add a shadow */
+  margin-top: 150px;
+}
+
+.form {
+  text-align: center; /* Center form elements */
+}
+
+.form header {
+  font-size: 2rem; /* Increase font size */
+  font-weight: bold; /* Make text bold */
+  margin-bottom: 20px; /* Add margin below header */
+}
+
+.form input {
+  width: 100%; /* Make inputs full width */
+  padding: 12px 20px; /* Add padding to inputs */
+  margin: 8px 0; /* Add margin to inputs */
+  box-sizing: border-box; /* Add box-sizing property */
+  border: 1px solid #ccc; /* Add border to inputs */
+  border-radius: 4px; /* Add rounded corners to inputs */
+}
+
+.form input:focus {
+  border: 1px solid #555; /* Change border color on focus */
+}
+
+.form input.button {
+  width: 100%; /* Make button full width */
+  background-color: #4CAF50; /* Set button background color */
+  color: white; /* Set button text color */
+  padding: 14px 20px; /* Add padding to button */
+  margin: 8px 0; /* Add margin to button */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add rounded corners to button */
+  cursor: pointer; /* Add cursor pointer */
+}
+
+.form input.button:hover {
+  background-color: #45a049; /* Change button background color on hover */
+}
+
+.signup {
+  margin-top: 12px; /* Add margin above signup text */
+  text-align: center; /* Center signup text */
+}
+
+.signup a {
+  color: #00bfff; /* Change link color */
+  text-decoration: none; /* Remove underline from link */
+}
+
+.signup a:hover {
+  text-decoration: underline; /* Add underline to link on hover */
+}
+
+    </style>
+</head>
+<body>
+   
+  <div class="container">
+    <form class="form">
+      <header>SignIn</header>
+      <input type="email" id="email" class="input" placeholder="Enter your Email">
+      <br>
+      <input type="password" name="" id="password" class="input" placeholder="Enter your Password">
+      <br>
+      <input type="button" value="Sign in" id="signin" class="input button"> 
+      <div class="signup">
+        Don't have an account? <a href="./index.html">Sign Up</a>
+      </div>
+    </form>
+  </div>
+  
+
+
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+ <script>
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBqnTGrqgVxURPkAASNG8lLKvcPtuXpOZ4",
+  authDomain: "my-project-b2620.firebaseapp.com",
+  databaseURL: "https://my-project-b2620-default-rtdb.firebaseio.com",
+  projectId: "my-project-b2620",
+  storageBucket: "my-project-b2620.appspot.com",
+  messagingSenderId: "1095507878214",
+  appId: "1:1095507878214:web:c2b6605fadc6fd41aa0547",
+  measurementId: "G-L66NPPTC4C"
+};
+
+     firebase.initializeApp(firebaseConfig)
+
+
+
+ </script>
+ <script src="new.js"></script>
+</body>
+</html>
